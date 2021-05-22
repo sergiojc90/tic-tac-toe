@@ -1,6 +1,10 @@
 // Function for creating the gameboard
     function createGameboard(){
-        let board = new Array(9);
+        let board = [
+            ["X","O","X"],
+            ["X","O","X"],
+            ["X","O","X"]
+        ];
 
         return board;
     };
