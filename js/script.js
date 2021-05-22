@@ -1,7 +1,7 @@
 // Function for creating the gameboard
     function createGameboard(){
         let board = [
-            "X","O","X",
+            " ","O","X",
             "X","O","X",
             "X","O","X"
         ];
@@ -27,7 +27,11 @@
 
 // Factory function for creating an objecto that controls the game flow
     function gameFlow(e){
-        console.log(e.target.dataset.index)
+        if((e.target.textContent === "X") || (e.target.textContent === "O")){
+            console.log(e.target.dataset.index);
+        }else{
+            console.log("This is empty");
+        }
     };
 
 

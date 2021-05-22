@@ -1,6 +1,7 @@
 .main-gameboard-container{
     display: grid;
     margin: 0 auto;
+    min-height: 500px;
     max-width: 900px;
     grid-template-columns: 1fr 1fr 1fr;
     font-family: 'Courier New', Courier, monospace;
@@ -15,6 +16,7 @@
 }
 
 .square:hover{
-    transform: scale(.95);
+    background-color: #118190;
+    transform: scale(1.1);
     cursor: pointer;
 }
