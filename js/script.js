@@ -12,10 +12,11 @@
         board.forEach(element => {
 
             square = document.createElement("div");
-            square.dataset.index = index;
+            square.dataset.index = `${index}`;
             index += 1;
             square.classList.add("square");
             square.textContent = element;
+            square.addEventListener("click", (e) => gameFlow(e))
 
             gameBoard.appendChild(square);
         })
@@ -25,9 +26,10 @@
     createGameboard();
 
 // Factory function for creating an objecto that controls the game flow
-    function gameFlow(){
-
+    function gameFlow(e){
+        console.log(e.target.dataset.index)
     };
+
 
 // Factory function for creating the players
     function createPlayer(name){
