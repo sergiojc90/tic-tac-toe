@@ -1,0 +1,15 @@
+.main-gameboard-container{
+    display: grid;
+    margin: 0 auto;
+    max-width: 900px;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
+}
+
+.square{
+    background-color: #80cbc4;
+    border: 1px solid #fff;
+    padding: 20px;
+    text-align: center;
+}
