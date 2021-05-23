@@ -13,10 +13,10 @@
                 this.square = document.createElement("div");
             },
             bindEvents: function() {
-
+                
             },
             render: function() {
-                
+
             },
         }
 
