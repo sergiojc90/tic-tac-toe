@@ -2,28 +2,32 @@
     (function(){
         let gameBoard = {
             board: [
-                "X","O","X",
-                "O","X","O",
-                "X","O","X",
+                "","","",
+                "","","",
+                "","","",
             ],
             init: function() {
                 this.cacheDom();
-                this.render();
+                this.bindEvents();
             },
             cacheDom: function() {
                 this.gameBoard = document.getElementById("gameBoard");
                 this.startButton = document.getElementById("startButton");
             },
+            bindEvents: function() {
+                this.startButton.addEventListener("click",this.render.bind(this));
+            },
             render: function() {
                 this.board.forEach(this.addSquare)
             },
-            addSquare: function(item,index){
+            addSquare: function(item){
                 square = document.createElement("div");
                 square.classList.add("square");
-                square.dataset.index = `${index}`;
                 square.textContent = item;
-                index += 1;
                 gameBoard.gameBoard.appendChild(square);
+            },
+            addSelection:function(e){
+                console.log(e.target.dataset.index);
             }
         }
 
