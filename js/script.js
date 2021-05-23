@@ -8,20 +8,23 @@
             ],
             init: function() {
                 this.cacheDom();
-                this.bindEvents();
                 this.render();
             },
             cacheDom: function() {
                 this.gameBoard = document.getElementById("gameBoard");
                 this.startButton = document.getElementById("startButton");
-                this.square = document.createElement("div");
-            },
-            bindEvents: function() {
-
             },
             render: function() {
-
+                this.board.forEach(this.addSquare)
             },
+            addSquare: function(item,index){
+                square = document.createElement("div");
+                square.classList.add("square");
+                square.dataset.index = `${index}`;
+                square.textContent = item;
+                index += 1;
+                gameBoard.gameBoard.appendChild(square);
+            }
         }
 
         gameBoard.init();
