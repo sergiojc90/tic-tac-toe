@@ -1,7 +1,11 @@
 // Board Module
     (function(){
         let gameBoard = {
-            board: ["x"],
+            board: [
+                "X","O","X",
+                "O","X","O",
+                "X","O","X",
+            ],
             init: function() {
                 this.cacheDom();
                 this.bindEvents();
@@ -13,7 +17,7 @@
                 this.square = document.createElement("div");
             },
             bindEvents: function() {
-                
+
             },
             render: function() {
 
