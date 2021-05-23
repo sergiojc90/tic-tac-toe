@@ -1,10 +1,5 @@
-// Function for creating the gameboard
-    function createGameboard(){
-        let board = [
-            " ","O","X",
-            "X","O","X",
-            "X","O","X"
-        ];
+// Function for displaying the gameboard on the page
+    const displayGameboard = ((board) => {
 
         gameBoard = document.getElementById("gameBoard");
 
@@ -21,18 +16,12 @@
             gameBoard.appendChild(square);
         })
         return board;
-    };
-
-    createGameboard();
+    })();;
 
 // Factory function for creating an objecto that controls the game flow
-    function gameFlow(e){
-        if((e.target.textContent === "X") || (e.target.textContent === "O")){
-            console.log(e.target.dataset.index);
-        }else{
-            console.log("This is empty");
-        }
-    };
+    const gameFlow = (() =>{
+
+    })();
 
 
 // Factory function for creating the players
