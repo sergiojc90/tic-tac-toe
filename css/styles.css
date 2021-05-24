@@ -18,10 +18,10 @@ html{
     display: grid;
     min-height: 300px;
     min-width: 300px;
-    max-width: 900px;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 10rem;
+    font-size: 5rem;
 }
 
 .square{

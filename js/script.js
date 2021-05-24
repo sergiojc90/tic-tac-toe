@@ -25,18 +25,21 @@
     squareOptions.forEach(addPlayerSelection);
 
     function addPlayerSelection(squareOption){
-        squareOption.addEventListener("click",function(event){
-            console.log(event.target.dataset.index);
-        })
+        squareOption.addEventListener("click",playerSelection)
     }
 
     function playerSelection(event){
-        if(event.target.textContent === null){
-            event.textContent = player.textContent;
+        console.log(event.target.value);
+        if(event.target.textContent === ""){
+            event.target.textContent = player.textContent;
             playerTurn();
         }
     }
 
     function playerTurn(){
-        
+        if (player.textContent === "X"){
+            player.textContent="O";
+        }else{
+            player.textContent="X";
+        }
     }
