@@ -1,4 +1,5 @@
 // Board Module
-(function(){
-    let 
-})();
+    const gameBoard = (function(){
+        
+    })();
+
