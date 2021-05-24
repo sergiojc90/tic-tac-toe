@@ -1,3 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
 .main{
     display: flex;
     flex-direction: column;
@@ -6,13 +16,12 @@
 
 .main-gameboard-container{
     display: grid;
-    margin: 0 auto;
     min-height: 300px;
     min-width: 300px;
     max-width: 900px;
     grid-template-columns: 1fr 1fr 1fr;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 100px;
+    font-size: 10rem;
 }
 
 .square{
@@ -29,7 +38,28 @@
     cursor: pointer;
 }
 
-.main-startButton{
+.main h2{
+    font-size: 2rem;
+    margin: 20px;
+}
+
+.main .main-setup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+}
+
+.main .main-setup__player{
+    font-size: 1.8rem;
+}
+
+.main .main-setup__resetButton{
+
+}
+
+.main.main-startButton{
     min-width: 300px;
 }
 
