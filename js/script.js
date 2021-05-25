@@ -1,4 +1,45 @@
 // Board Module
+
+    const player = (name, mark)=>{
+        const getName = () => name;
+        const getMark = () => mark;
+
+        return {getName,getMark}
+    }
+
+    const gamePlay = (function(){
+        // DOM manipulation
+        let gameboard = document.getElementById("gameBoard");
+        let startButton = document.getElementById("startButton");
+        let resetButton = document.getElementById("reset");
+        let player = document.getElementById("player");
+
+        // Render the empty Tic Tac Toe board
+        render();
+
+        function render(){
+            board.forEach(addSquares);
+            let squareOptions = document.querySelectorAll(".square");
+            squareOptions.forEach(addPlayerSelection);
+        };
+    
+        function addSquares(element,index){
+            let square = document.createElement("div");
+            square.classList.add("square");
+            square.dataset.index = index;
+            square.textContent = element;
+            gameboard.appendChild(square);
+        };
+
+        function playerSelection(event){
+            if(event.target.textContent === ""){
+                event.target.textContent = player.textContent;
+                board[event.target.dataset.index] = event.target.textContent;
+                playerTurn();
+            }
+        }
+    })();
+
     let board = new Array(9).fill(null);
 
     // DOM manipulation
