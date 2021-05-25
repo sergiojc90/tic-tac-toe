@@ -4,9 +4,11 @@
     // DOM manipulation
     let gameboard = document.getElementById("gameBoard");
     let startButton = document.getElementById("startButton");
-    let reset = document.getElementById("reset");
+    let resetButton = document.getElementById("reset");
     let player = document.getElementById("player");
     
+    resetButton.addEventListener("click", reset);
+
     render();
 
     function render(){
@@ -65,4 +67,13 @@
 
             return null;
         }
+    }
+
+    function reset(){
+        board = new Array(9).fill(null);
+        while(gameboard.hasChildNodes()){
+            console.log(gameboard.hasChildNodes())
+            gameboard.removeChild(gameboard.firstChild);
+        }
+        render();
     }
