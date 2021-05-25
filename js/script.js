@@ -1,20 +1,14 @@
-// Board Module
-
-    const player = (name, mark)=>{
-        const getName = () => name;
-        const getMark = () => mark;
-
-        return {getName,getMark}
-    }
-
     const gamePlay = (function(){
-        // DOM manipulation
+        // Players and board creation
         let board = new Array(9).fill(null);
 
+        // DOM manipulation
         let gameboard = document.getElementById("gameBoard");
-        let startButton = document.getElementById("startButton");
         let resetButton = document.getElementById("reset");
         let player = document.getElementById("player");
+
+        // Binding Events
+        resetButton.addEventListener("click",reset);
 
         // Render the empty Tic Tac Toe board
         render();
@@ -69,6 +63,7 @@
                 const[a,b,c] = combination;
     
                 if(board[a] && (board[a] === board[b] && board[a] === board[c])){
+                    debugger;
                     return combination;
                 }
     
@@ -79,10 +74,9 @@
         function reset(){
             board = new Array(9).fill(null);
             while(gameboard.hasChildNodes()){
-                console.log(gameboard.hasChildNodes())
                 gameboard.removeChild(gameboard.firstChild);
             }
+            player.textContent = "X";
             render();
         }
-    
     })();

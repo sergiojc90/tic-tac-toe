@@ -8,6 +8,17 @@ html{
     font-size: 62.5%;
 }
 
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header h2{
+    font-size: 2rem;
+    margin: 20px;
+}
+
 .main{
     display: flex;
     flex-direction: column;
@@ -16,8 +27,8 @@ html{
 
 .main-gameboard-container{
     display: grid;
-    min-height: 300px;
-    min-width: 300px;
+    min-height: 330px;
+    min-width: 330px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     font-family: 'Courier New', Courier, monospace;
@@ -36,11 +47,6 @@ html{
     background-color: #118190;
     transform: scale(1.1);
     cursor: pointer;
-}
-
-.main h2{
-    font-size: 2rem;
-    margin: 20px;
 }
 
 .main .main-setup{
