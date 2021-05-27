@@ -6,4 +6,4 @@ In this project I'm going to make a Tic Tac Toe game to play in the browser, one
 
 I've done this project as a part of JavaScript Fullstack curriculum of The Oding Project.
 
-You are welcome to see the live version of the project here.
+You are welcome to see the live version of the project [here](https://sergiojc90.github.io/tic-tac-toe/).
