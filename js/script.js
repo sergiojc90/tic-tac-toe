@@ -1,3 +1,7 @@
+    const player = function(name, mark){
+        
+    }
+    
     const gamePlay = (function(){
 
         // Board creation
