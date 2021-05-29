@@ -162,3 +162,27 @@ header {
 .winner {
   color: green;
 }
+
+footer {
+  margin: 20px 0;
+  padding: 20px 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.footer__design {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__design:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__design:hover {
+  color: var(--primary-color-dark);
+}
