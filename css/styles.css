@@ -13,6 +13,7 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
@@ -93,15 +94,14 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   justify-self: center;
   max-width: 400px;
+  max-height: 450px;
   padding: 1rem;
   background-color: var(--secondary-color-dark);
   border-radius: 1rem;
   font-weight: 700;
   font-size: 2rem;
-  margin-top: 20px;
 }
 
 .main-setup__resetButton {
@@ -164,7 +164,6 @@ header {
 }
 
 footer {
-  margin: 20px 0;
   padding: 20px 0;
   font-size: 1.8rem;
   font-weight: 700;
