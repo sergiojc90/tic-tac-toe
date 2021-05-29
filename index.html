@@ -16,13 +16,24 @@
    
 </head>
 <body>
-    <header class="header">
+    <header>
+        <div class="header__flex">
+            <div class="header__logo">
+                <img src="./assets/Logo_game.png" alt="Tic Tac Toe logo" width="30px">
+                <h1>Tic Tac Toe</h1>
+            </div>
+            <div class="header__github">
+                <a href="https://github.com/sergiojc90/tic-tac-toe" target="_blank">
+                    <img src="./assets/logo_github.png" alt="github logo" width="30px">
+                </a>
+            </div>
+        </div>
     </header>
     <div class="main">
-        <h2>Tic Tac Toe</h2>
+        <h2>Let's Play</h2>
         <div class="main-setup">
             <p id="player" class="main-setup__player">X</p>
-            <button id="reset" class="main main-setup__resetButton">
+            <button id="reset" class="main-setup__resetButton">
                 <span class="material-icons">
                     replay
                 </span>
